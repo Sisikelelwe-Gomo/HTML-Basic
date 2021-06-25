@@ -1,0 +1,47 @@
+<!--<dialog> Tag
+    The HTML <dialog> element represents a dialog box or other interactive component
+        such as a window.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTNL dialog Tag</title>
+</head>
+<body>
+    <!--Simple pop-up dialog box, containing a form-->
+
+    <dialog id="dialog">
+        <form method="dialog">
+            <h3>Hello</h3>
+            <menu>
+                <button id="close" type="reset">Close</button>
+            </menu>
+        </form>
+    </dialog>
+
+    <menu>
+        <button id="click">Click Me</button>
+    </menu>
+
+    <script>
+        (function() {
+            var clickButton = document.getElementById("click");
+            var closeButton = document.getElementById("close");
+            var dialog = document.getElementById("dialog");
+
+            //Update button opens a modal dialog clickButton.addEventListener('click', function())
+            {
+                dialog.showModal();
+            };
+            //Form close button closes the dialog box closeButton.addEventListner('click', function())
+
+            {
+                dialog.close();
+            };
+        })();
+    </script>
+</body>
+</html>
